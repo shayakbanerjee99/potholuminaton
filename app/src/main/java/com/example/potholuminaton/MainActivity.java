@@ -80,6 +80,8 @@ public class MainActivity extends AppCompatActivity {
         client = LocationServices.getFusedLocationProviderClient(this);
     }
 
+
+
     private void getLocation(){
         if (ActivityCompat.checkSelfPermission(MainActivity.this,
                 Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED ) {
@@ -129,6 +131,23 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
+
+    //TODO: Change google.com to the website you want it to redirect to
+    public void openWeb1(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void openWeb2(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+        startActivity(intent);
+    }
+
+    public void openWeb3(View view){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+        startActivity(intent);
+    }
+
 
     public void illuminationImageCapture(View view){
         dispatchTakePictureIntent(ILLUMINATION);
@@ -198,9 +217,7 @@ public class MainActivity extends AppCompatActivity {
         this.sendBroadcast(mediaScanIntent);
     }
 
-    public void startMapActivity(View view){
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
-    }
+
+
 
 }

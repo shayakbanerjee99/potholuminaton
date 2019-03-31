@@ -48,8 +48,22 @@
     <Button
         android:layout_width="149dp"
         android:layout_height="50dp"
-        android:text="open map"
+        android:text="open web1"
         android:layout_marginTop="10dp"
-        android:onClick="startMapActivity"/>
+        android:onClick="openWeb1"/>
+
+    <Button
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:text="open web2"
+        android:layout_marginTop="10dp"
+        android:onClick="openWeb2"/>
+
+    <Button
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:text="open web3"
+        android:layout_marginTop="10dp"
+        android:onClick="openWeb3"/>
 
 </LinearLayout>
